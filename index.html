@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+  <div id="app">
+    <h1>💰 Gestor de Gastos</h1>
+
+    <section class="card">
+      <form id="expense-form">
+        <input type="text" id="description" placeholder="Descripción" required />
+        <input type="number" id="amount" placeholder="Monto ($)" min="0" step="0.01" required />
+        <select id="category">
+          <option value="comida">🍽 Comida</option>
+          <option value="transporte">🚌 Transporte</option>
+          <option value="entretenimiento">🎮 Entretenimiento</option>
+          <option value="otro">📦 Otro</option>
+        </select>
+        <button type="submit">Agregar</button>
+      </form>
+    </section>
+
+    <section class="filters">
+      <label>Filtrar por categoría:</label>
+      <select id="filter-category">
+        <option value="all">Todas</option>
+        <option value="comida">🍽 Comida</option>
+        <option value="transporte">🚌 Transporte</option>
+        <option value="entretenimiento">🎮 Entretenimiento</option>
+        <option value="otro">📦 Otro</option>
+      </select>
+    </section>
+
+    <section class="summary">
+      <ul id="expense-list"></ul>
+      <h3>Total: <span id="total-amount">$0.00</span></h3>
+    </section>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

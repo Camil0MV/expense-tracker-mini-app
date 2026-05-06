@@ -1,0 +1,23 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #646cff;
+  --danger: #e74c3c;
+  --bg: #f4f4f4;
+  --text: #213547;
+  --border: #ddd;
+}
+
+/* TODO: body */
+/* TODO: #app */
+/* TODO: h1 */
+/* TODO: .card */
+/* TODO: form, input, select, button */
+/* TODO: .filters */
+/* TODO: ul, .expense-item */
+/* TODO: .btn-delete */
+/* TODO: .summary */
